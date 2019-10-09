@@ -1,0 +1,16 @@
+C:\Users\miah\source\repos\aster\uni.api\obj\Release\netcoreapp2.2\uni.api.csprojAssemblyReference.cache
+C:\Users\miah\source\repos\aster\uni.api\obj\Release\netcoreapp2.2\uni.api.RazorAssemblyInfo.cache
+C:\Users\miah\source\repos\aster\uni.api\obj\Release\netcoreapp2.2\uni.api.RazorAssemblyInfo.cs
+C:\Users\miah\source\repos\aster\uni.api\obj\Release\netcoreapp2.2\uni.api.AssemblyInfoInputs.cache
+C:\Users\miah\source\repos\aster\uni.api\obj\Release\netcoreapp2.2\uni.api.AssemblyInfo.cs
+C:\Users\miah\source\repos\aster\uni.api\bin\Release\netcoreapp2.2\appsettings.Development.json
+C:\Users\miah\source\repos\aster\uni.api\bin\Release\netcoreapp2.2\appsettings.json
+C:\Users\miah\source\repos\aster\uni.api\bin\Release\netcoreapp2.2\Properties\launchSettings.json
+C:\Users\miah\source\repos\aster\uni.api\bin\Release\netcoreapp2.2\uni.api.deps.json
+C:\Users\miah\source\repos\aster\uni.api\bin\Release\netcoreapp2.2\uni.api.runtimeconfig.json
+C:\Users\miah\source\repos\aster\uni.api\bin\Release\netcoreapp2.2\uni.api.runtimeconfig.dev.json
+C:\Users\miah\source\repos\aster\uni.api\bin\Release\netcoreapp2.2\uni.api.dll
+C:\Users\miah\source\repos\aster\uni.api\bin\Release\netcoreapp2.2\uni.api.pdb
+C:\Users\miah\source\repos\aster\uni.api\obj\Release\netcoreapp2.2\uni.api.RazorTargetAssemblyInfo.cache
+C:\Users\miah\source\repos\aster\uni.api\obj\Release\netcoreapp2.2\uni.api.dll
+C:\Users\miah\source\repos\aster\uni.api\obj\Release\netcoreapp2.2\uni.api.pdb
