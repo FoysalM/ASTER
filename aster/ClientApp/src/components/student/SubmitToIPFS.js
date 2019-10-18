@@ -32,24 +32,31 @@ export class SubmitToIPFS extends Component {
         const file = event.target.files[0]
         let reader = new window.FileReader()
         console.log('reader:', reader);
-        reader.readAsArrayBuffer(file)
+        reader.readAsText(file)
         reader.onloadend = () => this.encrypt(reader)
     };
 
     //Encrypt the file.
     encrypt = (reader) => {
         const dataFile = (reader.result),
-            dataBase64 = dataFile.toString('base64'),
-            encryptFile = CryptoJS.AES.encrypt(dataBase64, "Secret"),
-            buffer = new Buffer(encryptFile.toString(), 'base64');
+            //convertedToBase64 = dataFile.toString('base64'),
+            encryptFile = CryptoJS.AES.encrypt(dataFile, "Secret"),
+            buffer = new Buffer(encryptFile.toString());
+        //console.log('convertedToBase64:', convertedToBase64);
+        console.log('dataFile:', dataFile);
+        console.log('encryptFile:', encryptFile);
+        console.log('buffer:', buffer);
         this.setState({ buffer });
     };
-
 
     viewOnRinkeby = () => {
         const ethscan = this.state.transactionHash;
         window.open('https://rinkeby.etherscan.io/tx/' + ethscan);
-        console.log('ethscan:', ethscan)
+    };
+
+    dlFromIPFS = () => {
+        const ipfsAdd = this.state.a;
+        window.open('https://ipfs.io/ipfs/' + ipfsAdd);
     };
 
     sendToIPFS = async (event) => {
@@ -127,6 +134,9 @@ export class SubmitToIPFS extends Component {
                         <CardActions>
                             <Button size="large" color="primary" onClick={this.viewOnRinkeby}>
                                 Transaction Details
+                            </Button>
+                            <Button size="large" color="primary" onClick={this.dlFromIPFS}>
+                                Download IPFS File
                             </Button>
                         </CardActions>
                     </Card>

@@ -1,33 +1,36 @@
 ﻿import React, { Component } from 'react';
 import CryptoJS from "react-native-crypto-js";
-//import fs from 'fs';
 import { Form } from 'react-bootstrap';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 
 export class decrypt extends Component {
 
+    state = {
+        ipfsFileOutput: ''
+    };
+
     captureFile = (event) => {
         event.stopPropagation()
         event.preventDefault()
+
         const file = event.target.files[0]
         let reader = new window.FileReader()
-        console.log('reader:', reader);
-        reader.readAsArrayBuffer(file)
+        reader.readAsText(file)
         reader.onloadend = () => this.decrypt(reader)
     };
 
     decrypt = (reader) => {
-        const dataFile = (reader.result);
-        console.log('data file:', dataFile)
-        const decryptFile = CryptoJS.AES.decrypt(dataFile.toString('base64'), "Secret");
+        const dataFile = (reader.result),
+              decryptFile = CryptoJS.AES.decrypt(dataFile.toString(), "Secret"), // THIS IS NOT ADVISABLE, AS THE KEY IS VISIBLE VIA THE CLIENT!
+              ipfsFileOutput = CryptoJS.enc.Utf8.stringify(decryptFile);
+              //buffer = new Buffer(ipfsFileOutput); //Is this required if I want to output to a file??
+        console.log('dataFile:', dataFile)
         console.log('decrypted:', decryptFile)
-        const result = CryptoJS.enc.Utf8.stringify(decryptFile);
-        console.log('result:', result)
-        const buffer = new Buffer(result, 'base64');
-        console.log('buffer:', buffer)
-        //fs.writeFileSync(reader, buffer);
-    }
+        //console.log('buffer:', buffer)
+        this.setState({ ipfsFileOutput })
+
+    };
 
     render() {
         return (
@@ -44,6 +47,7 @@ export class decrypt extends Component {
                             Send it
                         </Button>
                     </Form>
+                    <h4> {this.state.ipfsFileOutput} </h4>
                 </Grid>
             </div>
         );

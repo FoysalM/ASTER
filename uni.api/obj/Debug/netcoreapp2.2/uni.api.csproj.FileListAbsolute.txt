@@ -14,3 +14,17 @@ C:\Users\miah\source\repos\aster\uni.api\obj\Debug\netcoreapp2.2\uni.api.csprojA
 C:\Users\miah\source\repos\aster\uni.api\bin\Debug\netcoreapp2.2\appsettings.Development.json
 C:\Users\miah\source\repos\aster\uni.api\bin\Debug\netcoreapp2.2\appsettings.json
 C:\Users\miah\source\repos\aster\uni.api\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+H:\Data\GitHub\ASTER\uni.api\bin\Debug\netcoreapp2.2\uni.api.deps.json
+H:\Data\GitHub\ASTER\uni.api\bin\Debug\netcoreapp2.2\uni.api.runtimeconfig.json
+H:\Data\GitHub\ASTER\uni.api\bin\Debug\netcoreapp2.2\uni.api.runtimeconfig.dev.json
+H:\Data\GitHub\ASTER\uni.api\bin\Debug\netcoreapp2.2\uni.api.dll
+H:\Data\GitHub\ASTER\uni.api\bin\Debug\netcoreapp2.2\uni.api.pdb
+H:\Data\GitHub\ASTER\uni.api\obj\Debug\netcoreapp2.2\uni.api.csprojAssemblyReference.cache
+H:\Data\GitHub\ASTER\uni.api\obj\Debug\netcoreapp2.2\uni.api.csproj.CoreCompileInputs.cache
+H:\Data\GitHub\ASTER\uni.api\obj\Debug\netcoreapp2.2\uni.api.RazorAssemblyInfo.cache
+H:\Data\GitHub\ASTER\uni.api\obj\Debug\netcoreapp2.2\uni.api.RazorAssemblyInfo.cs
+H:\Data\GitHub\ASTER\uni.api\obj\Debug\netcoreapp2.2\uni.api.AssemblyInfoInputs.cache
+H:\Data\GitHub\ASTER\uni.api\obj\Debug\netcoreapp2.2\uni.api.AssemblyInfo.cs
+H:\Data\GitHub\ASTER\uni.api\obj\Debug\netcoreapp2.2\uni.api.RazorTargetAssemblyInfo.cache
+H:\Data\GitHub\ASTER\uni.api\obj\Debug\netcoreapp2.2\uni.api.dll
+H:\Data\GitHub\ASTER\uni.api\obj\Debug\netcoreapp2.2\uni.api.pdb
