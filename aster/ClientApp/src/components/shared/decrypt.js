@@ -16,7 +16,7 @@ export class decrypt extends Component {
 
         const file = event.target.files[0]
         let reader = new window.FileReader()
-        reader.readAsText(file)
+        reader.readAsBinaryString(file)
         reader.onloadend = () => this.decrypt(reader)
     };
 

@@ -32,7 +32,7 @@ export class SubmitToIPFS extends Component {
         const file = event.target.files[0]
         let reader = new window.FileReader()
         console.log('reader:', reader);
-        reader.readAsText(file)
+        reader.readAsBinaryString(file)
         reader.onloadend = () => this.encrypt(reader)
     };
 
@@ -120,10 +120,10 @@ export class SubmitToIPFS extends Component {
                                     {this.state.a}
                                     <br />
                                 </Typography>
-                                <Typography variant="body" color="textSecondary" component="p">
+                                <Typography variant="h5" color="textSecondary" component="h3">
                                     Ethereum Contract Address
                                     <br />
-                                    {this.state.ethAddress}
+                                   {this.state.ethAddress}
                                     <br />
                                     Ethscan Transaction Code
                                     <br />
